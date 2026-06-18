@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Gemini Musical Night Survey Form</h1>
+    <p id="description">Thank you for attending the session and for providing us your feedback to help us improve the event next time.</p>
+
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input required type="text" id="name" placeholder="e.g., :Riya Dutt" name="name">
+      <br>
+      <label  id="email-label">Email:</label>
+      <input required type="email" id="email" placeholder="e.g., : example@email.com" name="email">
+      <br>
+      <label id="number-label">Age (optional):</label>
+      <input type="number" id="number" min="0" max="100" placeholder="e.g., : 32" name="age">
+      <br>
+      <br>
+      <h3>Which option best describes your current profession?</h3>
+      <select id="dropdown">
+        <option value="student">Student</option>
+        <option value="Working Professional">Working Professional</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="part-time">Part Time Working</option>
+        <option value="others">Others</option>
+        <option selected value="Prefer not to say">Prefer Not To Say</option>
+      </select>
+      <br>
+      
+      <h3>Would you recommend this event to anyone?</h3>
+      
+      <input type="radio" id="yes" name="choice" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="choice" value="no">
+      <label for="no">No</label>
+      <input type="radio" id="Maybe" name="choice" value="maybe">
+      <label for="Maybe">Not Sure! Maybe</label>
+      <br>
+      <h3>What do you like best about the event? (Check all that apply)</h3>
+      <input type="checkbox" value="prizes">
+      <label>Prizes</label>
+      <input type="checkbox" value="vibe">
+      <label>Vibe</label>
+      <input type="checkbox" value="gemini-features">
+      <label>Gemini Features</label>
+      <input type="checkbox" value="certificates">
+      <label>Certificates</label>
+      <input type="checkbox" value="competition">
+      <label>Competetion</label>
+      <input type="checkbox" value="musical-performances">
+      <label>Musical performances</label>
+      <input type="checkbox" value="not-enjoyed">
+      <label>Not enjoyed</label>
+      <br>
+      <h3>Any Comments or Suggestions...</h3>
+      <textarea rows="7" cols="90"></textarea>
+      <br>
+      <br>
+      <input type="submit" id="submit">
+      
+    </form>
+  </body>
+</html>
